@@ -231,34 +231,132 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:visibility="invisible" >
-        
-	    <LinearLayout
+	    
+        <LinearLayout
+            android:id="@+id/WorkoutFirstLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:gravity="center"
+            android:orientation="horizontal">
+	        
+            <TextView
+	        android:id="@+id/SongTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:textSize="8pt"
+			android:text="Song Name"/>
+            
+	    </LinearLayout>
+	    
+        <LinearLayout
             android:id="@+id/WorkoutSecondLine"
             android:layout_width="fill_parent" 
             android:layout_height="56px" 
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/WorkoutFirstLine">
+	        
+            <TextView
+	        android:id="@+id/ArtistTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:textSize="8pt"
+			android:text="Song Artist"/>
+            
+	    </LinearLayout>
+	    
+        <LinearLayout
+            android:id="@+id/WorkoutThirdLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/WorkoutSecondLine">
+	        
+            <TextView
+	        android:id="@+id/BPMTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:textSize="8pt"
+			android:text="BPM"/>
+            
+	    </LinearLayout>
+	    
+        <LinearLayout
+            android:id="@+id/WorkoutFourthLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/WorkoutThirdLine"
+            android:layout_marginBottom = "30dp">
+	        
+            <TextView
+	        android:id="@+id/TimerTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:textSize="8pt"/>
+            
+	    </LinearLayout>
+        
+	    <LinearLayout
+            android:id="@+id/WorkoutFifthLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="80px" 
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/WorkoutFourthLine">
+            
+	        <ImageButton
+	        android:id="@+id/imageButton_previous"
+	        android:layout_width="50dp"
+	        android:layout_height="80dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@null"
+	        android:src="@drawable/previous" />
+	        <ImageButton
+	        android:id="@+id/imageButton_playpause"
+	        android:layout_width="50dp"
+	        android:layout_height="80dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@null"
+	        android:src="@drawable/pause" />
+	        <ImageButton
+	        android:id="@+id/imageButton_next"
+	        android:layout_width="50dp"
+	        android:layout_height="80dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@null"
+	        android:src="@drawable/next" />
+	    </LinearLayout>
+	    
+	    <LinearLayout
+            android:id="@+id/WorkoutPadding" 
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/WorkoutFifthLine"
+            android:layout_marginBottom = "20dp">
+            
+	    </LinearLayout>
+	    
+	    <LinearLayout
+            android:id="@+id/WorkoutSixthLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/WorkoutPadding"
+            android:layout_marginBottom = "30dp">
 	        
             <Button
-	        android:id="@+id/previoussong"
+	        android:id="@+id/btnEndWorkout"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_centerHorizontal="true"
-	        android:layout_below="@id/RandomFirstLine"
-	        android:text="Previous Song" />
-            <Button
-	        android:id="@+id/playsong"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
-	        android:layout_below="@id/RandomFirstLine"
-	        android:text="PLAY" />
-            <Button
-	        android:id="@+id/nextsong"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_centerHorizontal="true"
-	        android:layout_below="@id/RandomFirstLine"
-	        android:text="Next Song" />
+	        android:text="END WORKOUT" />
+            
 	    </LinearLayout>
         
     </RelativeLayout>

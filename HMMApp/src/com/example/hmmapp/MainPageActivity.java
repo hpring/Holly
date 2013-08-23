@@ -1,6 +1,7 @@
 package com.example.hmmapp;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class MainPageActivity extends Activity {
 
@@ -72,6 +74,17 @@ public class MainPageActivity extends Activity {
 				
 				//Show the Workout Page
 				findViewById(R.id.WorkoutPage).setVisibility(View.VISIBLE);
+				
+				//Start the workout timer
+				final TextView timerTextView = (TextView)findViewById(R.id.TimerTextView);
+				CountDownTimer timer = new CountDownTimer(50000, 1000) {
+
+				    public void onTick(long millisUntilFinished) {
+				    	timerTextView.setText(String.valueOf(millisUntilFinished / 1000));
+				    }
+				    public void onFinish() {
+				    }
+				 }.start();
 				
 			}
 			

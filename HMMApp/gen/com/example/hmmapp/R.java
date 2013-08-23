@@ -25,8 +25,14 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int next=0x7f020001;
+        public static final int pause=0x7f020002;
+        public static final int play=0x7f020003;
+        public static final int previous=0x7f020004;
     }
     public static final class id {
+        public static final int ArtistTextView=0x7f090021;
+        public static final int BPMTextView=0x7f090023;
         public static final int HillDurationTextView=0x7f090007;
         public static final int HillFirstLine=0x7f090003;
         public static final int HillIntensityTextView=0x7f09000a;
@@ -40,6 +46,7 @@ public final class R {
         public static final int RandomEditText_Duration=0x7f09001b;
         public static final int RandomFirstLine=0x7f090019;
         public static final int RandomWorkoutInfoPage=0x7f090018;
+        public static final int SongTextView=0x7f09001f;
         public static final int SteadyBPMTextView=0x7f090012;
         public static final int SteadyDurationTextView=0x7f090015;
         public static final int SteadyEditText_Duration=0x7f090016;
@@ -47,19 +54,25 @@ public final class R {
         public static final int SteadySecondLine=0x7f090014;
         public static final int SteadyWorkoutInfoPage=0x7f090010;
         public static final int SteadyeditText_BPM=0x7f090013;
-        public static final int TextView=0x7f09001f;
+        public static final int TimerTextView=0x7f090025;
+        public static final int WorkoutFifthLine=0x7f090026;
         public static final int WorkoutFirstLine=0x7f09001e;
+        public static final int WorkoutFourthLine=0x7f090024;
+        public static final int WorkoutPadding=0x7f09002a;
         public static final int WorkoutPage=0x7f09001d;
         public static final int WorkoutSecondLine=0x7f090020;
-        public static final int action_settings=0x7f090024;
+        public static final int WorkoutSixthLine=0x7f09002b;
+        public static final int WorkoutThirdLine=0x7f090022;
+        public static final int action_settings=0x7f09002d;
+        public static final int btnEndWorkout=0x7f09002c;
         public static final int btnStartHillWorkout=0x7f09000f;
         public static final int btnStartRandomWorkout=0x7f09001c;
         public static final int btnStartSteadyWorkout=0x7f090017;
         public static final int editText_minimumBPM=0x7f090005;
+        public static final int imageButton_next=0x7f090029;
+        public static final int imageButton_playpause=0x7f090028;
+        public static final int imageButton_previous=0x7f090027;
         public static final int listView_workouts=0x7f090001;
-        public static final int nextsong=0x7f090023;
-        public static final int playsong=0x7f090022;
-        public static final int previoussong=0x7f090021;
         public static final int radioHigh=0x7f09000e;
         public static final int radioLow=0x7f09000c;
         public static final int radioMedium=0x7f09000d;
