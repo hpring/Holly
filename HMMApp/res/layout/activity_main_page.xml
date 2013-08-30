@@ -32,10 +32,27 @@
         android:visibility="invisible" >
         
         <LinearLayout
-            android:id="@+id/HillFirstLine"
+            android:id="@+id/BackLine"
             android:layout_width="fill_parent" 
             android:layout_height="56px" 
             android:orientation="horizontal">
+            
+            <ImageButton
+	        android:id="@+id/imageButton_Hillback"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@null"
+	        android:src="@drawable/back" />
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:id="@+id/HillFirstLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:layout_below="@id/BackLine">
             
             <TextView
 	        android:id="@+id/MinBPMTextView"
@@ -134,10 +151,26 @@
         android:visibility="invisible" >
 	    
         <LinearLayout
-            android:id="@+id/SteadyFirstLine"
+            android:id="@+id/BackLine"
             android:layout_width="fill_parent" 
             android:layout_height="56px" 
             android:orientation="horizontal">
+            
+            <ImageButton
+	        android:id="@+id/imageButton_Steadyback"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@null"
+	        android:src="@drawable/back" />
+        </LinearLayout>
+	    
+        <LinearLayout
+            android:id="@+id/SteadyFirstLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:layout_below="@id/BackLine">
             
             <TextView
 	        android:id="@+id/SteadyBPMTextView"
@@ -194,12 +227,28 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:visibility="invisible" >
+	    
+        <LinearLayout
+            android:id="@+id/BackLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal">
+            
+            <ImageButton
+	        android:id="@+id/imageButton_Randomback"
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:layout_centerHorizontal="true"
+	        android:background="@null"
+	        android:src="@drawable/back" />
+        </LinearLayout>
         
         <LinearLayout
             android:id="@+id/RandomFirstLine"
             android:layout_width="fill_parent" 
             android:layout_height="56px" 
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_below="@id/BackLine">
 	        
             <TextView
 	        android:id="@+id/RandomDurationTextView"
@@ -360,4 +409,42 @@
 	    </LinearLayout>
         
     </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/ResultsPage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" >
+	    
+        <LinearLayout
+            android:id="@+id/ResultsLine"
+            android:layout_width="fill_parent" 
+            android:layout_height="56px" 
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom = "30dp">
+            
+            <TextView
+	        android:id="@+id/ResultsTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+			android:textSize="8pt"
+			android:text="Show workout results here"/>            
+	    </LinearLayout>
+        
+        <Button
+	        android:id="@+id/btnHome"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:text="Home"
+	        android:layout_below="@id/ResultsLine"/>
+	   
+        
+    </RelativeLayout>
+    
+    
+    
+    
+    
 </RelativeLayout>
